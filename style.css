@@ -1,58 +1,65 @@
-* {
+/* Appliquer le fond d'écran */
+body {
+    background: url('pexels-eberhardgross-2088203.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-header {
-    background-color: #222;
+/* Style de l'en-tête avec un fond arrondi foncé */
+.header-container {
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 20px;
-    font-size: 24px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
+/* Conteneur des services */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     padding: 50px 20px;
 }
 
-.service {
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
+/* Style des blocs des services */
+.service-box {
+    width: 320px;
+    height: 450px;
+    border-radius: 15px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
+    background: rgba(0, 0, 0, 0.8);
 }
 
-.service:hover {
+.service-box:hover {
     transform: scale(1.05);
 }
 
-.service img {
+/* Image dans les blocs */
+.service-box img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
 }
 
-.service h2 {
+/* Texte du service dans un bloc foncé */
+.service-box h2 {
     position: absolute;
     bottom: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 15px;
-    font-size: 20px;
+    font-size: 22px;
+    border-radius: 0 0 15px 15px;
 }
