@@ -1,6 +1,6 @@
 /* Appliquer le fond d'écran */
 body {
-    background: url('pexel.jpg') no-repeat center center fixed;
+    background: url('assets/pexel.jpg') no-repeat center center fixed;
     background-size: cover;
     text-align: center;
     margin: 0;
