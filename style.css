@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    background: url('assets/neon.png') no-repeat center center fixed;
+    background: url('./assets/neon.png') no-repeat center center fixed;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: white;
+    
 }
 
 /* Style du header */
