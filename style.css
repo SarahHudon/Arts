@@ -1,21 +1,26 @@
-/* Appliquer le fond d'écran */
+/* styles.css */
 body {
     background: url('assets/neon.png') no-repeat center center fixed;
     background-size: cover;
-    text-align: center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    color: white;
 }
 
-/* Style de l'en-tête avec un fond arrondi foncé */
+/* Style du header */
 .header-container {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre pour lisibilité */
     padding: 20px;
-    border-radius: 15px;
-    display: inline-block;
-    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
 }
 
 /* Conteneur des services */
@@ -23,43 +28,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 30px;
-    padding: 50px 20px;
+    padding: 50px;
 }
 
-/* Style des blocs des services */
+/* Bloc de chaque service */
 .service-box {
-    width: 320px;
-    height: 450px;
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre */
+    padding: 20px;
     border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .service-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Effet au survol */
 }
 
-/* Image dans les blocs */
-.service-box img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-
-/* Texte du service dans un bloc foncé */
-.service-box h2 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+a {
+    text-decoration: none;
     color: white;
-    padding: 15px;
-    font-size: 22px;
-    border-radius: 0 0 15px 15px;
 }
