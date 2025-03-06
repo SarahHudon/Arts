@@ -1,13 +1,12 @@
 /* Styles généraux */
 body {
-    background: url('./assets/neon.png') no-repeat center center fixed;
+    background: url('assets/neon.png') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: white;
     text-size-adjust: 100%;
 }
 
