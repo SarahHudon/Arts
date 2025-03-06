@@ -5,12 +5,11 @@ body {
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    
+    color: white;
 }
 
 /* Style du header */
@@ -40,6 +39,7 @@ body {
     text-align: center;
     width: 300px;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .service-box img {
@@ -48,7 +48,8 @@ body {
 }
 
 .service-box:hover {
-    transform: scale(1.05); /* Effet au survol */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
 }
 
 a {
