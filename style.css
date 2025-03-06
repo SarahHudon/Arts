@@ -1,6 +1,6 @@
 /* Styles généraux */
 body {
-    background: url('./assets/neon.png') no-repeat center center fixed;
+    background: url('assets/neon.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
