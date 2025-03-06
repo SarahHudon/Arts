@@ -1,18 +1,17 @@
 /* Styles généraux */
 body {
-    background: url('assets/neon.png') no-repeat center center fixed;
+    background: url('./assets/neon.png') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    color: white;
     text-size-adjust: 100%;
 }
 
 /* HEADER */
 .header-container {
-    background: rgba(0, 0, 0, 0.7); /* Fond sombre pour meilleure lisibilité */
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -26,14 +25,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Permet d'adapter la mise en page sur petits écrans */
+    flex-wrap: wrap;
     gap: 30px;
     padding: 50px;
 }
 
 /* BLOC DES SERVICES */
 .service-box {
-    background: rgba(0, 0, 0, 0.7); /* Fond sombre pour lisibilité */
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -77,21 +76,6 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-/* MASK COMPATIBILITÉ EDGE & CHROME */
-.masked-element {
-    -webkit-mask-image: url('masque.png');
-    mask-image: url('masque.png');
-
-    -webkit-mask-position: center;
-    mask-position: center;
-
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-
-    -webkit-mask-size: cover;
-    mask-size: cover;
 }
 
 /* RESPONSIVE DESIGN */
