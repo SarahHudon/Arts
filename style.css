@@ -1,58 +1,110 @@
-/* styles.css */
+/* Styles généraux */
 body {
     background: url('./assets/neon.png') no-repeat center center fixed;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     color: white;
+    text-size-adjust: 100%;
 }
 
-/* Style du header */
+/* HEADER */
 .header-container {
-    background: rgba(0, 0, 0, 0.7); /* Fond sombre pour lisibilité */
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre pour meilleure lisibilité */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     width: 80%;
     margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Conteneur des services */
+/* CONTENEUR PRINCIPAL */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Permet d'adapter la mise en page sur petits écrans */
     gap: 30px;
     padding: 50px;
 }
 
-/* Bloc de chaque service */
+/* BLOC DES SERVICES */
 .service-box {
-    background: rgba(0, 0, 0, 0.7); /* Fond sombre */
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre pour lisibilité */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     width: 300px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .service-box img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
+/* Effet au survol */
 .service-box:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
 }
 
+/* LIENS */
 a {
     text-decoration: none;
     color: white;
+}
+
+/* SCROLLBAR (Compatibilité maximale) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* MASK COMPATIBILITÉ EDGE & CHROME */
+.masked-element {
+    -webkit-mask-image: url('masque.png');
+    mask-image: url('masque.png');
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header-container {
+        width: 95%;
+        padding: 15px;
+    }
 }
