@@ -20,4 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
             alert(`Vous avez sélectionné : ${service.querySelector("h2").innerText}`);
         });
     });
+
+    // Appliquer le fond personnalisé pour le service SahShine
+    const sahShineService = document.getElementById('service-sahshine');
+    if (sahShineService) {
+        sahShineService.addEventListener('click', () => {
+            document.body.classList.add('sahshine-background');
+        });
+    }
 });

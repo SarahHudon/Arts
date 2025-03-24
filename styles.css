@@ -91,3 +91,7 @@ a {
         padding: 15px;
     }
 }
+.sahshine-background {
+    background: url('assets/sahshine.png') no-repeat center center fixed;
+    background-size: cover;
+}
