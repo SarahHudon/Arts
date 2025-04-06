@@ -95,3 +95,12 @@ a {
     background: url('assets/sahshine.png') no-repeat center center fixed;
     background-size: cover;
 }
+.solo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    text-align: center;
+    padding: 40px 20px;
+}
