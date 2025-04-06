@@ -14,11 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         service.addEventListener("mouseleave", () => {
             service.style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 0.5)";
         });
+        console.log("SahShine sélectionné !");
 
-        // Message d'alerte au clic
-        service.addEventListener("click", () => {
-            alert(`Vous avez sélectionné : ${service.querySelector("h2").innerText}`);
-        });
     });
 
     // Appliquer le fond personnalisé pour le service SahShine
